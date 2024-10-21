@@ -1,6 +1,6 @@
 const jwt=require('jsonwebtoken');
 const jwtAuthMiddleware=(req,res,next)=>{
-//for 
+//for auth
     const authorization=req.headers.authorization;
     if(!authorization){
         return res.status(404).json({error:'token not found'})
